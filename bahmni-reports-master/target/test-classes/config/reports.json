@@ -1,0 +1,47 @@
+{
+  "vitalsReport": {
+    "name": "Vitals Report",
+    "type": "obsCount",
+    "config": {
+      "conceptNames": [
+        "Vitals"
+      ]
+    }
+  },
+  "patientReport": {
+    "name": "Patient Information",
+    "type": "PatientReport"
+  },
+  "OrderFulfillmentReport": {
+    "name": "Order Fulfillment Report",
+    "type": "OrderFulfillmentReport",
+    "config": {
+      "type": "OrderFulfillmentReport",
+      "orderTypes": [
+        "Plain Order"
+      ]
+    }
+  },
+  "medicationLogTemplateReport": {
+    "name": "Medication Log Data Export",
+    "type": "obsTemplate",
+    "config": {
+      "templateName": "Medication log Template",
+      "patientAttributes": [],
+      "applyDateRangeFor": "encounterCreateDate",
+      "conceptSource": "EndTB"
+    }
+  },
+  "drugOrderReport": {
+    "name": "Drug Order report",
+    "type": "DrugOrder"
+  },
+
+  "customSqlReport": {
+    "name": "ObsSqlReport",
+    "type": "MRSGeneric",
+    "config": {
+      "sqlPath": "src/test/resources/sql/obsData.sql"
+    }
+  }
+}

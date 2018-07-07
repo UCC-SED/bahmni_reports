@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: org.bahmni.reports.report.integrationtests.ConcatenatedReportTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.bahmni.reports.report.integrationtests.ConcatenatedReportTest
+shouldConcatenateReports(org.bahmni.reports.report.integrationtests.ConcatenatedReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.integrationtests.ConcatenatedReportTest.<init>(ConcatenatedReportTest.java:12)
+
+shouldThrowExceptionForConcatenatedReportOfCsvResponseType(org.bahmni.reports.report.integrationtests.ConcatenatedReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.integrationtests.ConcatenatedReportTest.<init>(ConcatenatedReportTest.java:12)
+

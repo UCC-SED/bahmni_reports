@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.bahmni.reports.template.SqlReportTemplateTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in org.bahmni.reports.template.SqlReportTemplateTest
+ensureThatTheDatatypeOfColumnsArePreserved(org.bahmni.reports.template.SqlReportTemplateTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.template.SqlReportTemplateTest.<init>(SqlReportTemplateTest.java:19)
+

@@ -1,0 +1,338 @@
+{
+    "aggregateReport": {
+        "name": "Aggregate Report Name",
+        "type": "aggregation",
+        "config": {
+            "report": {
+                "type": "observations",
+                "config": {
+                }
+            },
+            "rowGroups": [
+                "Age"
+            ],
+            "columnGroups": [
+                "Gender"
+            ],
+            "distinctGroups": [
+                "Patient ID"
+            ]
+        }
+    },
+    "aggregateReportWithConfig": {
+        "name": "Aggregate Report with config",
+        "type": "aggregation",
+        "config": {
+            "report": {
+                "type": "observations",
+                "config": {
+                    "conceptNamesToFilter": [
+                        "Weight"
+                    ]
+                }
+            },
+            "rowGroups": [
+                "Age"
+            ],
+            "columnGroups": [
+                "Gender"
+            ],
+            "distinctGroups": [
+                "Patient ID"
+            ]
+        }
+    },
+    "aggregateReportWithMultipleRowGropus": {
+        "name": "Aggregate Report with multiple Row Groups config",
+        "type": "aggregation",
+        "config": {
+            "report": {
+                "type": "observations",
+                "config": {}
+            },
+            "rowGroups": [
+                "Age",
+                "Patient Id"
+            ],
+            "columnGroups": [
+                "Gender"
+            ],
+            "distinctGroups": [
+                "Patient ID"
+            ]
+        }
+    },
+    "aggregateReportWithMultipleColumnGropus": {
+        "name": "Aggregate Report with multiple Column Groups config",
+        "type": "aggregation",
+        "config": {
+            "report": {
+                "type": "observations",
+                "config": {}
+            },
+            "rowGroups": [
+                "Age"
+            ],
+            "columnGroups": [
+                "Gender",
+                "Patient Id"
+            ],
+            "distinctGroups": [
+                "Concept Name"
+            ]
+        }
+    },
+    "aggregateReportForVisitsReport": {
+        "name": "Aggregated report for visits report",
+        "type": "aggregation",
+        "config": {
+            "report": {
+                "type": "visits"
+            },
+            "rowGroups": [
+                "Visit Type"
+            ],
+            "columnGroups": [
+                "Gender"
+            ],
+            "distinctGroups": [
+                "Patient Identifier"
+            ]
+        }
+    },
+    "aggregateReportForProgramsReport": {
+        "name": "Aggregated report for programs report",
+        "type": "aggregation",
+        "config": {
+            "report": {
+                "type": "programs",
+                "config": {
+                    "patientAddresses": [
+                        "city_village",
+                        "address3"
+                    ],
+                    "forDataAnalysis": true,
+                    "showAllStates": true,
+                    "programNamesToFilter": [
+                        "HIV PROGRAM"
+                    ]
+                }
+            },
+            "rowGroups": [
+                "Program Name"
+            ],
+            "columnGroups": [
+                "Gender"
+            ],
+            "distinctGroups": [
+                "Patient Identifier"
+            ]
+        }
+    },
+    "aggregateReportForProgramsWithTotalColumn": {
+        "name": "Aggregated report for programs with total column",
+        "type": "aggregation",
+        "config": {
+            "report": {
+                "type": "programs",
+                "config": {
+                    "patientAddresses": [
+                        "city_village",
+                        "address3"
+                    ],
+                    "showAllStates": true,
+                    "programNamesToFilter": [
+                        "HIV PROGRAM"
+                    ]
+                }
+            },
+            "rowGroups": [
+                "Program Name"
+            ],
+            "columnGroups": [
+                "Gender"
+            ],
+            "distinctGroups": [
+                "Patient Identifier"
+            ],
+            "showTotalColumn": true
+        }
+    },
+    "aggregateReportForProgramsWithTotalRow": {
+        "name": "Aggregated report for programs with total row",
+        "type": "aggregation",
+        "config": {
+            "report": {
+                "type": "programs",
+                "config": {
+                    "patientAddresses": [
+                        "city_village",
+                        "address3"
+                    ],
+                    "showAllStates": true,
+                    "programNamesToFilter": [
+                        "HIV PROGRAM"
+                    ]
+                }
+            },
+            "rowGroups": [
+                "Program Name"
+            ],
+            "columnGroups": [
+                "Gender"
+            ],
+            "distinctGroups": [
+                "Patient Identifier"
+            ],
+            "showTotalRow": true
+        }
+    },
+    "aggregateReportForProgramsWithTotalRowAndColumn": {
+        "name": "Aggregated report for programs with total row and column",
+        "type": "aggregation",
+        "config": {
+            "report": {
+                "type": "programs",
+                "config": {
+                    "patientAddresses": [
+                        "city_village",
+                        "address3"
+                    ],
+                    "showAllStates": true,
+                    "programNamesToFilter": [
+                        "HIV PROGRAM"
+                    ]
+                }
+            },
+            "rowGroups": [
+                "Program Name"
+            ],
+            "columnGroups": [
+                "Gender"
+            ],
+            "distinctGroups": [
+                "Patient Identifier"
+            ],
+            "showTotalColumn": true,
+            "showTotalRow": true
+        }
+    },
+    "aggregatedReportForObservationsWithAgeGroup": {
+        "name": "Aggregated report for observations with age group",
+        "type": "aggregation",
+        "config": {
+            "report": {
+                "type": "observations",
+                "config": {
+                    "ageGroupName": "Observation Age Group"
+                }
+            },
+            "rowGroups": [
+                "Observation Age Group"
+            ],
+            "columnGroups": [
+                "Gender"
+            ],
+            "distinctGroups": [
+                "Patient Identifier"
+            ]
+        }
+    },
+    "AggregatedReportForLabOrdersWithAgeGroup": {
+        "name": "Aggregated report for labOrders with age group",
+        "type": "aggregation",
+        "config": {
+            "report": {
+                "type": "labOrders",
+                "config": {
+                    "ageGroupName": "Observation Age Group"
+                }
+            },
+            "rowGroups": [
+                "Observation Age Group"
+            ],
+            "columnGroups": [
+                "Gender"
+            ],
+            "distinctGroups": [
+                "Patient Identifier"
+            ]
+        }
+    },
+    "aggregatedReportForVisitsWithAgeGroup": {
+        "name": "Aggregated report for visits with age group",
+        "type": "aggregation",
+        "config": {
+            "report": {
+                "type": "visits",
+                "config": {
+                    "ageGroupName": "Observation Age Group"
+                }
+            },
+            "rowGroups": [
+                "Observation Age Group"
+            ],
+            "columnGroups": [
+                "Gender"
+            ],
+            "distinctGroups": [
+                "Patient Identifier"
+            ]
+        }
+    },
+    "AggregatedReportForProgramsWithAgeGroup": {
+        "name": "Aggregated report for programs with age group",
+        "type": "aggregation",
+        "config": {
+            "report": {
+                "type": "programs",
+                "config": {
+                    "ageGroupName": "Observation Age Group"
+                }
+            },
+            "rowGroups": [
+                "Gender"
+            ],
+            "columnGroups": [
+                "Observation Age Group"
+            ],
+            "distinctGroups": [
+                "Patient Identifier"
+            ]
+        }
+    },
+    "AggregatedReportWithoutRowGroup": {
+        "name": "Aggregated report without rowGroup",
+        "type": "aggregation",
+        "config": {
+            "report": {
+                "type": "programs",
+                "config": {
+                    "ageGroupName": "Observation Age Group"
+                }
+            },
+            "columnGroups": [
+                "Observation Age Group"
+            ],
+            "distinctGroups": [
+                "Patient Identifier"
+            ]
+        }
+    },
+    "AggregatedReportWithoutColumnGroup": {
+        "name": "Aggregated report without columnGroup",
+        "type": "aggregation",
+        "config": {
+            "report": {
+                "type": "programs"
+            },
+            "rowGroups": [
+                "Gender"
+            ],
+            "distinctGroups": [
+                "Patient Identifier"
+            ],
+            "showTotalRow": true
+        }
+    }
+}

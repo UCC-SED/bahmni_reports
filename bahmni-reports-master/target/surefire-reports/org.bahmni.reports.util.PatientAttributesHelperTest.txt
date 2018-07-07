@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: org.bahmni.reports.util.PatientAttributesHelperTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.191 sec <<< FAILURE! - in org.bahmni.reports.util.PatientAttributesHelperTest
+ensureOnePatientAttributeIsProperlyConstructed(org.bahmni.reports.util.PatientAttributesHelperTest)  Time elapsed: 1.189 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<..., NULL))) as "caste"[
+from person_attribute
+INNER JOIN person_attribute_type ON person_attribute_type.person_attribute_type_id = person_attribute.person_attribute_type_id
+LEFT JOIN concept_name person_attribute_cn ON person_attribute.value = person_attribute_cn.concept_id AND person_attribute_cn.concept_name_type = "FULLY_SPECIFIED"
+WHERE person_attribute_type.name IN ("caste")
+GROUP BY person_id]
+> but was:<..., NULL))) as "caste"[
+from person_attribute
+INNER JOIN person_attribute_type ON person_attribute_type.person_attribute_type_id = person_attribute.person_attribute_type_id
+LEFT JOIN concept_name person_attribute_cn ON person_attribute.value = person_attribute_cn.concept_id AND person_attribute_cn.concept_name_type = "FULLY_SPECIFIED"
+WHERE person_attribute_type.name IN ("caste")
+GROUP BY person_id]
+>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.bahmni.reports.util.PatientAttributesHelperTest.ensureOnePatientAttributeIsProperlyConstructed(PatientAttributesHelperTest.java:35)
+
+ensureTwoPatientAttributesAreProperlyConstructed(org.bahmni.reports.util.PatientAttributesHelperTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...LL))) as "education"[
+from person_attribute
+INNER JOIN person_attribute_type ON person_attribute_type.person_attribute_type_id = person_attribute.person_attribute_type_id
+LEFT JOIN concept_name person_attribute_cn ON person_attribute.value = person_attribute_cn.concept_id AND person_attribute_cn.concept_name_type = "FULLY_SPECIFIED"
+WHERE person_attribute_type.name IN ("caste", "education")
+GROUP BY person_id]
+> but was:<...LL))) as "education"[
+from person_attribute
+INNER JOIN person_attribute_type ON person_attribute_type.person_attribute_type_id = person_attribute.person_attribute_type_id
+LEFT JOIN concept_name person_attribute_cn ON person_attribute.value = person_attribute_cn.concept_id AND person_attribute_cn.concept_name_type = "FULLY_SPECIFIED"
+WHERE person_attribute_type.name IN ("caste", "education")
+GROUP BY person_id]
+>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.bahmni.reports.util.PatientAttributesHelperTest.ensureTwoPatientAttributesAreProperlyConstructed(PatientAttributesHelperTest.java:28)
+

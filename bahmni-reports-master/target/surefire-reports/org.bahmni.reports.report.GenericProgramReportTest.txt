@@ -1,0 +1,268 @@
+-------------------------------------------------------------------------------
+Test set: org.bahmni.reports.report.GenericProgramReportTest
+-------------------------------------------------------------------------------
+Tests run: 33, Failures: 0, Errors: 33, Skipped: 0, Time elapsed: 0.072 sec <<< FAILURE! - in org.bahmni.reports.report.GenericProgramReportTest
+shouldExcludeColumnsSpecifedInTheConfig(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldIgnoreTheColumnsWhichAreNotPresentInReport(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchDataFilteredByConfiguredProgramName(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchBasicColumnsIfNoConfigSpecified(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchConfiguredProgramAttributes(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldNotIncludeExcludedColumnsEvenThoughTheyAreConfiguredInColumnsOrder(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldNotThrowErrorIfStartAndEndDatesAreEmpty(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldHaveColumnsProvidedInTheOrderThatTheyHaveConfigured(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchProgramsEnrolledWithInSpecifiedDateRange(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldThrowExceptionIfInvalidColumnIsConfigured(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchAllTheStatesForAParticularPatientWhenConfiguredToSeeAll(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchConfiguredPatientAddressesAlongWithBasicColumns(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchReportWithExtraIdentifiers(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchFieldsForDataAnalysisAlongWithBasic(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchAllTheDataWithFullConfig(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchReportWithOneExtraIdentifiers(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldNotFetchPersonAddressesWhenEmptyListIsConfigured(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldNotFetchPatientAttributesWhenEmptyListIsConfigured(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchBasicFieldsWithDataAnalysisFalse(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchBasicColumnsWhenProgramNamesAreEmpty(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldThrowExceptionIfInvalidSortOrderIsConfigured(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchTheProgramEvenThoughIfItDoesNotHaveState(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchAllStatesWhenConfiguredToShowAll(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldSortInAscendingOrderByDefaultIfSortOrderIsNotMentionedInConfig(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchBasicColumnsOnlyIfEmptyConfigSpecified(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchActiveProgramsWithInTheDateRange(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldHaveColumnsProvidedInTheOrderThatTheyHaveConfiguredFromDifferentGroups(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchAgeGroupColumnIfConfigured(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldThrowAnExceptionIfAllColumnsAreExcluded(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldThrowExceptionIfOnlySortByIsConfiguredInConfig(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldSortTheColumnsBasedOnCaseInsensitivityOfColumnNamesAndSortOrderInSortByConfig(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldFetchConfiguredPatientAttributesAlongWithBasicColumns(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+
+shouldSortTheColumnsBasedOnTheConfiguration(org.bahmni.reports.report.GenericProgramReportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.BahmniReportsProperties.getOpenmrsUrl(BahmniReportsProperties.java:63)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.getRuntimeProperties(BaseIntegrationTest.java:132)
+	at org.openmrs.test.BaseContextSensitiveTest.<init>(BaseContextSensitiveTest.java:185)
+	at org.bahmni.reports.report.integrationtests.BaseIntegrationTest.<init>(BaseIntegrationTest.java:87)
+	at org.bahmni.reports.report.GenericProgramReportTest.<init>(GenericProgramReportTest.java:13)
+

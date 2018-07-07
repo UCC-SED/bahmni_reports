@@ -1,0 +1,284 @@
+{
+    "programsWithoutConfig": {
+        "name": "Generic Patient Program Report Without Config",
+        "type": "programs"
+    },
+    "programsWithEmptyConfig": {
+        "name": "Generic Patient Program Report With Empty Config",
+        "type": "programs",
+        "config": {}
+    },
+    "programsWithPatientAttributes": {
+        "name": "Generic Patient Program Report With Patient Attributes",
+        "type": "programs",
+        "config": {
+            "patientAttributes": [
+                "education",
+                "primaryContact",
+                "secondaryContact",
+                "class",
+                "cluster"
+            ]
+        }
+    },
+    "programsWithEmptyPatientAttributes": {
+        "name": "Generic Patient Program Report With Empty Patient Attributes",
+        "type": "programs",
+        "config": {
+            "patientAttributes": []
+        }
+    },
+    "programsWithEmptyPatientAddresses": {
+        "name": "Generic Patient Program Report With Empty Patient Addresses",
+        "type": "programs",
+        "config": {
+            "patientAddresses": []
+        }
+    },
+    "programsWithPatientAddresses": {
+        "name": "Generic Patient Program Report With Patient Addresses",
+        "type": "programs",
+        "config": {
+            "patientAddresses": [
+                "city_village",
+                "address3"
+            ]
+        }
+    },
+    "programsForDataAnalysis": {
+        "name": "Generic Patient Program Report For Data Analysis",
+        "type": "programs",
+        "config": {
+            "forDataAnalysis": true
+        }
+    },
+    "programsForDataAnalysisFalse": {
+        "name": "Generic Patient Program Report For Data Analysis False",
+        "type": "programs",
+        "config": {
+            "forDataAnalysis": false
+        }
+    },
+    "programsWithProgramAttributes": {
+        "name": "Generic Patient Program Report With Program Attributes",
+        "type": "programs",
+        "config": {
+            "programAttributes": [
+                "Registration Id",
+                "High Risk Reasons",
+                "High Risk"
+            ]
+        }
+    },
+    "programsFilteredByProgramNames": {
+        "name": "Generic Patient Program Report Filtered By Program Names",
+        "type": "programs",
+        "config": {
+            "programNamesToFilter": [
+                "MDR-TB PROGRAM"
+            ]
+        }
+    },
+    "programsWithEmptyrogramNames": {
+        "name": "Generic Patient Program Report With Empty Program Names",
+        "type": "programs",
+        "config": {
+            "programNamesToFilter": []
+        }
+    },
+    "programsWithAllTheStates": {
+        "name": "Generic Patient Program Report With All The States",
+        "type": "programs",
+        "config": {
+            "showAllStates": true
+        }
+    },
+    "programsWithFullConfig": {
+        "name": "Generic Patient Program Report With Full Config",
+        "type": "programs",
+        "config": {
+            "patientAttributes": [
+                "education",
+                "primaryContact",
+                "secondaryContact",
+                "class",
+                "cluster"
+            ],
+            "patientAddresses": [
+                "city_village",
+                "address3"
+            ],
+            "programAttributes": [
+                "Registration Id",
+                "High Risk Reasons",
+                "High Risk"
+            ],
+            "forDataAnalysis": true,
+            "showAllStates": true,
+            "programNamesToFilter": [
+                "MDR-TB PROGRAM"
+            ]
+        }
+    },
+    "programsWithAllStatesAsMultipleRows": {
+        "name": "Generic Patient Program To See All States As Multiple Rows",
+        "type": "programs",
+        "config": {
+            "showAllStates": true
+        }
+    },
+    "programReportWithExcludedColumn": {
+        "name": "Generic Patient Program Report With Excluded Column",
+        "type": "programs",
+        "config": {
+            "patientAttributes": [
+                "education",
+                "primaryContact",
+                "secondaryContact",
+                "class",
+                "cluster"
+            ],
+            "patientAddresses": [
+                "city_village",
+                "address3"
+            ],
+            "programAttributes": [
+                "Registration Id",
+                "High Risk Reasons",
+                "High Risk"
+            ],
+            "excludeColumns": [
+                "education",
+                "primaryContact"
+            ],
+            "forDataAnalysis": true,
+            "showAllStates": true,
+            "programNamesToFilter": [
+                "MDR-TB PROGRAM"
+            ]
+        }
+    },
+    "programReportWithExcludedAllColumn": {
+        "name": "Generic Patient Program Report With Excluded All Column Ignore case",
+        "type": "programs",
+        "config": {
+            "excludeColumns": [
+                "patient identifier",
+                "Patient Name",
+                "Age",
+                "Birthdate",
+                "Gender",
+                "Patient Created Date",
+                "Program Name",
+                "Enrolled Date",
+                "Completed Date",
+                "Current State"
+            ]
+        }
+    },
+    "programsWithExtraIdentifiersConfigured": {
+        "name": "Generic Patient Program Report with extra identifiers",
+        "type": "programs",
+        "config": {
+            "additionalPatientIdentifiers": [
+                "Aadhaar Id",
+                "Pan Id"
+            ]
+        }
+    },
+    "programsWithOneExtraIdentifiersConfigured": {
+        "name": "Generic Patient Program Report with one extra identifiers",
+        "type": "programs",
+        "config": {
+            "additionalPatientIdentifiers": [
+                "Pan Id"
+            ]
+        }
+    },
+    "programsWithAgeGroupNameConfigured": {
+        "name": "Generic Patient Program Report With Age Group Name",
+        "type": "programs",
+        "config": {
+            "ageGroupName": "Observation Age Group"
+        }
+    },
+    "programReportWithOrderOfColumnsConfigured" : {
+        "name": "program report with order of columns configured",
+        "type": "programs",
+        "config": {
+            "preferredColumns": ["Patient Name", "Age", "Patient Identifier","Program Name"]
+        }
+    },
+    "programReportWithPatientAttributesConfiguredInOrderOfColumns": {
+        "name": "program report which have patient attributes configured in order of columns",
+        "type": "programs",
+        "config": {
+            "patientAttributes": ["secondaryContact","class","cluster"],
+            "programAttributes" : [ "Registration Id", "High Risk Reasons"],
+            "forDataAnalysis": true,
+            "preferredColumns": ["class", "Registration Id","Patient Name","High Risk Reasons","OutCome"]
+        }
+    },
+    "programReportWithInValidColumnsConfiguredInOrderOfColumns": {
+        "name": "program report with invalid columns configured in order of columns",
+        "type": "programs",
+        "config": {
+            "patientAttributes": ["secondaryContact","class","cluster"],
+            "preferredColumns": ["classabc","def","jkl","Completed Date"]
+        }
+    },
+    "programReportWithExcludedColumnsConfiguredInOrderOfColumns": {
+        "name": "program report with excluded columns configured in order of columns",
+        "type": "programs",
+        "config": {
+            "excludeColumns": ["Gender","Completed Date","EnrolledDate"],
+            "preferredColumns": ["Gender","Birthdate","Age","Completed Date"]
+        }
+    },
+    "programReportWithSortByColumns": {
+        "name": "program report with sort by columns configured",
+        "type": "programs",
+        "config": {
+            "sortBy": [{"column": "Program Name", "sortOrder": "desc"}]
+        }
+    },
+    "programReportWithOnlyColumnConfiguredSortByColumns": {
+        "name": "program report with only column configured in  sort by columns",
+        "type": "programs",
+        "config": {
+            "showAllStates": true,
+            "sortBy": [{"column": "Enrolled Date"},{"column" : "Patient Identifier","sortOrder":"desc"}]
+        }
+    },
+    "programReportWithOnlySortByConfiguredSortByColumns": {
+        "name": "program report with only sort by configured in  sort by columns",
+        "type": "programs",
+        "config": {
+            "patientAttributes": ["secondaryContact","class","cluster"],
+            "sortBy": [{"sortOrder":"asc"},{"sortOrder":"desc"}]
+        }
+    },
+    "programReportWithInvalidColumnConfiguredSortByColumns": {
+        "name": "program report with invalid column configured in  sort by columns",
+        "type": "programs",
+        "config": {
+            "patientAttributes": ["secondaryContact","class","cluster"],
+            "sortBy": [{"column" : "random", "sortOrder":"asc"},{"column":"class","sortOrder":"desc"}]
+        }
+    },
+    "programReportWithInvalidSortOrderIsConfiguredSortByColumns": {
+        "name": "program report with invalid sortOrder configured in  sort by columns",
+        "type": "programs",
+        "config": {
+            "sortBy": [{"column" : "Location Name", "sortOrder":"ascending"},{"column":"class","sortOrder":"descending"}]
+        }
+    },
+    "programReportWithCaseInsensitivityColumnNameIsConfiguredSortByColumns": {
+        "name": "program report with case insensitive column name and sort order configured in  sort by columns",
+        "type": "programs",
+        "config": {
+            "forDataAnalysis": true,
+            "sortBy": [{"column" : "paTient Id", "sortOrder":"aSc"},{"column" : "pRoGram Id","sortOrder":"dEsc"}]
+        }
+    }
+}

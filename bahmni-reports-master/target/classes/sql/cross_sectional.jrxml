@@ -1,0 +1,3973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-05-21T10:23:01 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cross_sectional01" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" uuid="868819c0-2e1e-457b-84c5-82067f527855">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<style name="Table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#E6E6E6"/>
+		</conditionalStyle>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#E6E6E6"/>
+		</conditionalStyle>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#E6E7E8"/>
+		</conditionalStyle>
+	</style>
+	<subDataset name="stored_p" uuid="55f3e017-ce44-4b02-aabe-5dc6192de44f">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localFocus"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="`openmrs`.`call_storedP`( &apos;2016-09-29&apos; , &apos;2017-09-29&apos;)" class="java.lang.Integer"/>
+	</subDataset>
+	<subDataset name="Dataset2" uuid="46ae3996-01d7-45f7-9ce8-6519bd77bebe">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localFocus"/>
+		<parameter name="start_date" class="java.util.Date">
+			<defaultValueExpression><![CDATA[new Date()]]></defaultValueExpression>
+		</parameter>
+		<parameter name="end_date" class="java.util.Date">
+			<defaultValueExpression><![CDATA[new Date()]]></defaultValueExpression>
+		</parameter>
+		<queryString language="SQL">
+			<![CDATA[SELECT 
+    'Cumulative number of clients ever started ART at this facility at beginning of the reporting period' AS 'indicator',
+     COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        ARVStatus = 'Start ARV'
+            AND visitStartDate < $P{start_date}
+			) AS tperiod 
+			
+UNION ALL SELECT 
+    'Client newly initiated on ART at this facility during the reporting quarter (EXCLUDE TI on ART)' AS 'indicator',
+   COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        cvf.CTCID, cvf.AgeToDate, cvf.Gender, cvf.visitStartDate
+    FROM
+        openmrs.ctc_visit_form cvf
+    JOIN ctc_reg_card crc ON crc.CTCID = cvf.CTCID
+        AND crc.TransferIn IS NULL
+    WHERE
+        cvf.ARVStatus = 'Start ARV'
+            AND cvf.visitStartDate >= $P{start_date}
+            AND cvf.visitStartDate <= $P{end_date}
+			) AS tperiod 
+			
+
+UNION ALL SELECT 
+    'Cumulative number of persons ever started on ART at this facility at the end of the reporting quarter' AS 'indicator',
+   COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        ARVStatus = 'Start ARV'
+            AND visitStartDate < '#endDate#') AS tperiod 
+			
+UNION ALL SELECT 
+    'Number of persons on ART and already enrolled in the program who transferred into facility during the reporting period' AS 'indicator',
+    COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT 
+        *
+    FROM
+        ctc_reg_card
+    WHERE
+        TransferIn IS NOT NULL
+            AND EnrollmentDate >= $P{start_date}
+            AND EnrollmentDate <= $P{end_date}
+			) AS tperiod 
+UNION ALL SELECT 
+    'Cummulative number of clients ever on ART at this facility at the end of this period' AS 'indicator',
+    COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        ARVStatus IN ('Start ARV' , 'Continue ARV', 'Restart')
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod 
+			
+UNION ALL SELECT 
+    'Number of clients who are on 1st line regimen during reporting period (INCLUDE TI ON ART)' AS 'indicator',
+   COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        ARVStatus IN ('Start ARV' , 'Continue ARV', 'Restart')
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod 
+			
+			
+UNION ALL SELECT 
+    'Number of clients who are on 2nd line regimen during reporting period (INCLUDE TI ON ART)' AS 'indicator',
+    COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        ARVStatus IN ('Start ARV' , 'Continue ARV', 'Restart')
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod 
+	
+UNION ALL SELECT 
+    'Number of clients who are on 3rd line regimen during reporting period (INCLUDE TI ON ART)' AS 'indicator',
+    COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        ARVStatus IN ('Start ARV' , 'Continue ARV', 'Restart')
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod 
+			
+	UNION ALL SELECT 
+
+    'Current number of clients on ART at the end of quater (Total of 1st, 2nd and 3rd line regimen)' AS 'indicator',
+    COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        ARVStatus IN ('Start ARV' , 'Continue ARV', 'Restart')
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod 
+			
+
+UNION ALL SELECT 
+    'Total number of HVL tests < 1000 copies/ml during reporting period' AS 'indicator',
+   COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT 
+        CTCID, AgeToDate, Gender, visitStartDate
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        ViralLoad < 1000
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod 
+
+UNION ALL SELECT 
+    'Total number of HVL tests < 50 copies/ml during reporting period' AS 'indicator',
+   COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT 
+        CTCID, AgeToDate, Gender, visitStartDate
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        ViralLoad < 50
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod 
+
+UNION ALL SELECT 
+    'Total number of HVL tests >= 1000 copies/ml during reporting period' AS 'indicator',
+    COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT 
+        CTCID, AgeToDate, Gender, visitStartDate
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        ViralLoad >= 1000
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod]]>
+		</queryString>
+		<field name="indicator" class="java.lang.String"/>
+		<field name="Total" class="java.math.BigDecimal"/>
+		<field name="M,Total" class="java.math.BigDecimal"/>
+		<field name="M,&lt;1 year" class="java.math.BigDecimal"/>
+		<field name="M,1-4 years" class="java.math.BigDecimal"/>
+		<field name="M,5-9 years" class="java.math.BigDecimal"/>
+		<field name="M,10-14 years" class="java.math.BigDecimal"/>
+		<field name="M,15-19 years" class="java.math.BigDecimal"/>
+		<field name="M,20-24 years" class="java.math.BigDecimal"/>
+		<field name="M,25-49 years" class="java.math.BigDecimal"/>
+		<field name="M,&gt;=50 years" class="java.math.BigDecimal"/>
+		<field name="F,Total" class="java.math.BigDecimal"/>
+		<field name="F,&lt;1 year" class="java.math.BigDecimal"/>
+		<field name="F,1-4 years" class="java.math.BigDecimal"/>
+		<field name="F,5-9 years" class="java.math.BigDecimal"/>
+		<field name="F,10-14 years" class="java.math.BigDecimal"/>
+		<field name="F,15-19 years" class="java.math.BigDecimal"/>
+		<field name="F,20-24 years" class="java.math.BigDecimal"/>
+		<field name="F,25-49 years" class="java.math.BigDecimal"/>
+		<field name="F,&gt;=50 years" class="java.math.BigDecimal"/>
+		<field name="Pregnant" class="java.math.BigDecimal"/>
+		<field name="BreastFeeding" class="java.math.BigDecimal"/>
+	</subDataset>
+	<subDataset name="Dataset1" uuid="a97fb3e4-4555-4dc3-972b-7851d3d74ee7">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localFocus"/>
+		<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="0"/>
+		<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="1000"/>
+		<parameter name="start_date" class="java.util.Date">
+			<defaultValueExpression><![CDATA[new Date()]]></defaultValueExpression>
+		</parameter>
+		<parameter name="end_date" class="java.util.Date">
+			<defaultValueExpression><![CDATA[new Date()]]></defaultValueExpression>
+		</parameter>
+		<queryString language="SQL">
+			<![CDATA[SELECT  'Cumulative number of persons ever enrolled in care at this facility at beginning of the reporting quarter' AS 'indicator',
+     COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',
+			  IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT 
+        *
+    FROM
+        ctc_reg_card
+    WHERE
+        EnrollmentDate < $P{start_date}  ) AS tperiod 
+        
+        UNION ALL
+
+
+SELECT 
+    'Number of persons NEWLY enrolled in HIV care at this facility during
+    the reporting quarter (EXCLUDE TI)' AS 'indicator',
+     COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT 
+        *
+    FROM
+        ctc_reg_card
+    WHERE
+        TransferIn IS NULL
+            AND EnrollmentDate >= $P{start_date}
+            AND EnrollmentDate <= $P{end_date}
+			) AS tperiod 
+			
+		
+
+UNION ALL
+ SELECT 
+    'Number of clients who received care during the reporting quarter' AS 'indicator',
+     COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod 
+			
+			
+		
+UNION ALL SELECT 
+    'Number of clients who received CPT during the reporting
+    quarter (subset of receieved care)' AS 'indicator',
+     COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        OIMedicine = 'Cotrimoxazole'
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod 
+			
+			
+UNION ALL SELECT 
+    'Number of persons screened for TB in the reporting quarter (subset of
+    received care)' AS 'indicator',
+     COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        TBScreening IS NOT NULL
+            AND TBScreening != 'NS = Not Screened'
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod 
+			
+			
+			
+UNION ALL SELECT 
+    'Number of persons who started on TB treatment (Pre ART and ART)
+    (subset of received care)' AS 'indicator',
+     COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID,
+            AgeToDate,
+            Gender,
+            visitStartDate,
+            IPTStatus,
+            TBRxStatus
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        TBRxStatus = 'Start TB - Start TB Rx'
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod 
+			
+
+UNION ALL SELECT 
+    'Number of clients who started on Isoniazid PreventiveTherapy
+    (IPT) during the reporting quarter (Pre ART and ART)' AS 'indicator',
+     COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate, IPTStatus
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        IPTStatus = 'Start IPT - Start IPT Rx'
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod 
+			
+			
+UNION ALL SELECT 
+    'Number of HIV positive clinically malnourished persons identified
+    during the quarter (subset of received care)' AS 'indicator',
+     COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate, NutritionStatus
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        NutritionStatus IN ('MOD - Moderate Malnourished' , 'MOD - Severely Malnourished', 'OB - Obesity')
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod 
+UNION ALL
+SELECT 
+    'Number of clients enrolled into CARE and not started ARV' AS 'indicator',
+     COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID,
+            AgeToDate,
+            Gender,
+            visitStartDate,
+            NutritionSupplement
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        ARVStatus = 'Not started ARV'
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod]]>
+		</queryString>
+		<field name="indicator" class="java.lang.String"/>
+		<field name="Total" class="java.math.BigDecimal"/>
+		<field name="M,Total" class="java.math.BigDecimal"/>
+		<field name="M,&lt;1 year" class="java.math.BigDecimal"/>
+		<field name="M,1-4 years" class="java.math.BigDecimal"/>
+		<field name="M,5-9 years" class="java.math.BigDecimal"/>
+		<field name="M,10-14 years" class="java.math.BigDecimal"/>
+		<field name="M,15-19 years" class="java.math.BigDecimal"/>
+		<field name="M,20-24 years" class="java.math.BigDecimal"/>
+		<field name="M,25-49 years" class="java.math.BigDecimal"/>
+		<field name="M,&gt;=50 years" class="java.math.BigDecimal"/>
+		<field name="F,Total" class="java.math.BigDecimal"/>
+		<field name="F,&lt;1 year" class="java.math.BigDecimal"/>
+		<field name="F,1-4 years" class="java.math.BigDecimal"/>
+		<field name="F,5-9 years" class="java.math.BigDecimal"/>
+		<field name="F,10-14 years" class="java.math.BigDecimal"/>
+		<field name="F,15-19 years" class="java.math.BigDecimal"/>
+		<field name="F,20-24 years" class="java.math.BigDecimal"/>
+		<field name="F,25-49 years" class="java.math.BigDecimal"/>
+		<field name="F,&gt;=50 years" class="java.math.BigDecimal"/>
+		<field name="Pregnant" class="java.math.BigDecimal"/>
+		<field name="BreastFeeding" class="java.math.BigDecimal"/>
+	</subDataset>
+	<subDataset name="Dataset3" uuid="ebb78938-5b78-4920-beec-98d0c5a8b42e">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localFocus"/>
+		<parameter name="start_date" class="java.util.Date">
+			<defaultValueExpression><![CDATA[new Date()]]></defaultValueExpression>
+		</parameter>
+		<parameter name="end_date" class="java.util.Date">
+			<defaultValueExpression><![CDATA[new Date()]]></defaultValueExpression>
+		</parameter>
+		<queryString language="SQL">
+			<![CDATA[SELECT 'Stopped ART' AS 'indicator',
+   COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate, ARVStatus
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        ARVStatus IN ('Stop')
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= '#endDate#') AS tperiod 
+UNION ALL SELECT 
+    'Transferred Out' AS 'indicator',
+    COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate, FollowUpStatus
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        FollowUpStatus = 'TO - Transfer out'
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod 
+
+UNION ALL SELECT 
+    'Death' AS 'indicator',
+    COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate, FollowUpStatus
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        FollowUpStatus = 'Dead - Patient Died'
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod 
+			
+
+UNION ALL SELECT 
+    'Lost to Follow Up/ Unkown' AS 'indicator',
+    COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate, FollowUpStatus
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        FollowUpStatus = 'LTF - Lost to Follow up'
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod 
+
+UNION ALL SELECT 
+    'Total' AS 'indicator',
+     COUNT(*) AS 'Total', 0 AS 'Pregnant', 0 AS 'BreastFeeding',
+    IFNULL(SUM(IF(tperiod.Gender = 'M', 1, 0)), 0) AS 'M,Total',
+    IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'M'
+               , 1,
+                0)),
+            0) AS 'M,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+              0)  AS 'M,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'M',1,0)), 0) AS 'M,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate <= 50 AND tperiod.Gender = 'M'
+                ,1,
+                0)),
+            0) AS 'M,>=50 years',
+	IFNULL(SUM(IF(tperiod.Gender = 'F', 1, 0)), 0) AS 'F,Total',
+   
+   IFNULL(SUM(IF(tperiod.AgeToDate < 1 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,<1 year',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 1
+                    AND tperiod.AgeToDate <= 4 AND tperiod.Gender = 'F'
+               , 1,
+                0)),
+            0) AS 'F,1-4 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 5
+                    AND tperiod.AgeToDate <= 9 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0)  AS 'F,5-9 years',IFNULL(SUM(IF(tperiod.AgeToDate >= 10 AND tperiod.AgeToDate <= 14 AND tperiod.Gender = 'F',1,0)), 0) AS 'F,10-14 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 15
+                    AND tperiod.AgeToDate <= 19 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,15-19 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 20
+                    AND tperiod.AgeToDate <= 24 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,20-24 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 25
+                    AND tperiod.AgeToDate <= 49 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,25-49 years',
+    IFNULL(SUM(IF(tperiod.AgeToDate >= 50 AND tperiod.Gender = 'F'
+                ,1,
+                0)),
+            0) AS 'F,>=50 years'
+FROM
+    (SELECT DISTINCT
+        CTCID, AgeToDate, Gender, visitStartDate, FollowUpStatus
+    FROM
+        openmrs.ctc_visit_form
+    WHERE
+        (FollowUpStatus IN ('LTF - Lost to Follow up' , 'Dead - Patient Died', 'TO - Transfer out')
+            OR ARVStatus = 'Stop')
+            AND visitStartDate >= $P{start_date}
+            AND visitStartDate <= $P{end_date}
+			) AS tperiod]]>
+		</queryString>
+		<field name="indicator" class="java.lang.String"/>
+		<field name="Total" class="java.math.BigDecimal"/>
+		<field name="M,Total" class="java.math.BigDecimal"/>
+		<field name="M,&lt;1 year" class="java.math.BigDecimal"/>
+		<field name="M,1-4 years" class="java.math.BigDecimal"/>
+		<field name="M,5-9 years" class="java.math.BigDecimal"/>
+		<field name="M,10-14 years" class="java.math.BigDecimal"/>
+		<field name="M,15-19 years" class="java.math.BigDecimal"/>
+		<field name="M,20-24 years" class="java.math.BigDecimal"/>
+		<field name="M,25-49 years" class="java.math.BigDecimal"/>
+		<field name="M,&gt;=50 years" class="java.math.BigDecimal"/>
+		<field name="F,Total" class="java.math.BigDecimal"/>
+		<field name="F,&lt;1 year" class="java.math.BigDecimal"/>
+		<field name="F,1-4 years" class="java.math.BigDecimal"/>
+		<field name="F,5-9 years" class="java.math.BigDecimal"/>
+		<field name="F,10-14 years" class="java.math.BigDecimal"/>
+		<field name="F,15-19 years" class="java.math.BigDecimal"/>
+		<field name="F,20-24 years" class="java.math.BigDecimal"/>
+		<field name="F,25-49 years" class="java.math.BigDecimal"/>
+		<field name="F,&gt;=50 years" class="java.math.BigDecimal"/>
+		<field name="Pregnant" class="java.math.BigDecimal"/>
+		<field name="BreastFeeding" class="java.math.BigDecimal"/>
+	</subDataset>
+	<parameter name="start_date" class="java.util.Date">
+		<defaultValueExpression><![CDATA[new Date()]]></defaultValueExpression>
+	</parameter>
+	<parameter name="end_date" class="java.util.Date">
+		<defaultValueExpression><![CDATA[new Date()]]></defaultValueExpression>
+	</parameter>
+	<parameter name="quaterValue" class="java.lang.Integer"/>
+	<parameter name="CTCID" class="java.lang.String"/>
+	<parameter name="HFRID" class="java.lang.String"/>
+	<parameter name="TypeOfService" class="java.lang.String"/>
+	<parameter name="reportingPeriod" class="java.lang.String"/>
+	<parameter name="dateCompletion" class="java.lang.String"/>
+	<parameter name="faciltyName" class="java.lang.String"/>
+	<parameter name="facilityOwnership" class="java.lang.String"/>
+	<parameter name="council" class="java.lang.String"/>
+	<parameter name="personReporting" class="java.lang.String"/>
+	<parameter name="region" class="java.lang.String"/>
+	<parameter name="designation" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT empty_func(),  call_storedP( $P{start_date} ,  $P{end_date}  ), prefix FROM openmrs.idgen_seq_id_gen order by id desc limit 1]]>
+	</queryString>
+	<variable name="tmp_table" class="java.lang.String"/>
+	<title>
+		<band height="131" splitType="Stretch">
+			<image>
+				<reportElement x="20" y="-16" width="54" height="56" uuid="29106274-19c3-480b-a792-467a2481532e"/>
+				<imageExpression><![CDATA["C:\\Users\\ucc-ian\\Desktop\\jasper\\MyReports\\tanzania.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="56" y="-16" width="495" height="15" uuid="526f1aea-88f5-4f4c-ac57-31c75ed86412">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[THE UNITED REPUBLIC OF TAZANIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="0" width="495" height="15" uuid="896f7bfe-d5f7-4623-a5c0-d385641d82f0">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MINISTRY OF HEALTH, COMMUNITY DEVELOMENT, GENDER, ELDERLY AND CHILDREN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="12" width="495" height="15" uuid="7a999c5b-8582-4ad4-ad61-7234bc7d37d8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NATIONAL CARE AND TREATMENT PROGRAM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="26" width="495" height="15" uuid="9ad88534-84d1-44d1-b9df-e68c3da0a44a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qarterly facility-based HIV care / ART reporting form]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="192" y="84" width="64" height="21" uuid="4fa2f29d-0f4f-4212-b592-b9181a54c83b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ownership:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="79" y="106" width="73" height="25" uuid="41fd9330-ed6e-4c55-8366-5c8bb1c93f0e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{region}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="25" y="85" width="78" height="20" uuid="de1171ed-2211-4af6-a14b-a2d1a40b0f7b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Facility name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="105" width="200" height="26" uuid="07f13c04-5b17-493b-ab55-b17b62af3f2a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name and designation of person reporting:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="354" y="83" width="85" height="21" uuid="bf0e8c99-8485-4a7c-9880-d4d95877ef1e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Council]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="406" y="64" width="133" height="20" uuid="471100ee-f31c-4b9d-84ac-0eed75801258"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="103" y="85" width="89" height="20" uuid="562f22da-8729-4ef0-8256-4d573d36421d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{faciltyName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="192" y="44" width="64" height="20" uuid="4fc6a397-d0e9-4bb6-b113-0c728a6e0cfd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Registry ID:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="256" y="44" width="98" height="20" uuid="b2663462-7e75-4c8c-b521-0c76b79932bd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HFRID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="23" y="44" width="56" height="20" uuid="735f4be9-bc87-4f29-acd5-9f0b2c2707c3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CTC ID:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="354" y="41" width="85" height="23" uuid="4334d486-ec40-42bf-b1df-e54e05ea112b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Type of service:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="79" y="44" width="113" height="20" uuid="1dc110e1-6cae-464a-bd63-38bfed09c578"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CTCID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="298" y="64" width="108" height="19" uuid="9bc87788-ee0b-4f29-9f6a-ebd07d078c11"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date of completion of form:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="107" width="49" height="24" uuid="ab292c34-8027-466f-b6ab-2af5e4e6229e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Region:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="256" y="84" width="98" height="21" uuid="1c55c815-3e61-4321-b32e-27c5ea8bb8a4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{facilityOwnership}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="64" width="205" height="19" uuid="e09ec835-d39e-498b-8e83-53e5ee149253"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("yyyy-MM-dd").format($P{start_date})+"  - "+new SimpleDateFormat("yyyy-MM-dd").format($P{end_date})]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="24" y="64" width="63" height="20" uuid="defc1a47-9ecb-473e-a83f-258a3fdf5ca3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporting period:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="439" y="41" width="100" height="23" uuid="2157dbdf-cc48-498e-b792-fb0308e2d916"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TypeOfService}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="107" width="166" height="24" uuid="f605d848-2b65-4571-8c9e-af0113ee4ac6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{designation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="83" width="99" height="24" uuid="46acd0fc-8bb9-4d47-8221-aefd4ba80267"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{council}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="217" splitType="Stretch">
+			<componentElement>
+				<reportElement x="0" y="31" width="555" height="70" uuid="2d31c001-488f-4364-be22-c920192d91f3">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="AllSectionsNoDetail">
+					<datasetRun subDataset="Dataset1" uuid="89cb293c-48f1-4be2-a92d-ebbd4cbba560">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="120" uuid="39fdb47f-12e8-45cd-b7e9-5b270976181e">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="120" height="50" uuid="38bc38ea-6daa-4265-b2c4-42a46202c9d3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="16" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Indicators]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField isStretchWithOverflow="true">
+								<reportElement x="0" y="0" width="120" height="20" uuid="1e985edb-8439-43f5-a87b-ecfbf4512263">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<textElement textAlignment="Justified">
+									<font fontName="Arial" size="6"/>
+									<paragraph lineSpacing="Single" lineSpacingSize="1.0" firstLineIndent="3" leftIndent="3" rightIndent="1" spacingBefore="0"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{indicator}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="31" uuid="a34c0bec-4a8f-4ee6-a0b9-1b7b7e48594e">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="31" height="50" uuid="a49744e3-ae68-499e-9450-658564bab536"/>
+								<textElement textAlignment="Center" verticalAlignment="Bottom">
+									<font size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[TOTAL(M+F)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="31" height="20" uuid="892fea16-71d8-404a-9c11-bdefcef67ebd">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Total}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="21" uuid="6e548200-4d7d-4ccf-9f2e-654314ab7500">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="21" height="50" uuid="ba10e1e0-96aa-4df9-a8be-03eea058eefc"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle" rotation="Left">
+									<font size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="21" height="20" uuid="0c040c7b-4436-4ac8-b8e8-a32899811da7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,Total}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="21" uuid="dad83c94-bd2d-49a4-b649-130b0cdd4966">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="21" height="50" uuid="a8300a70-53e7-4bb3-815e-25114c5f1c29"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[<1 Year]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="21" height="20" uuid="6ce0de39-d116-4e22-bbf7-08e7b38fd8de"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,<1 year}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="21" uuid="1c286ff2-049b-443d-bdca-ac25a8b249c8">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="21" height="50" uuid="8c6a305b-3618-44ea-9385-3859b0359010"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[1-4 Years]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="21" height="20" uuid="0f841845-5f3f-4eea-84ea-c05e1fc5147d">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,1-4 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="21" uuid="ef9196d2-7b21-4a74-beeb-43bbf99afd8a">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="21" height="50" uuid="9b1c4928-20fc-4e2d-a48a-10121d4198ac"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[5-9 Years]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="21" height="20" uuid="52bf022d-f044-49b5-ba18-cda11b02f0c7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,5-9 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="21" uuid="33441292-f161-4932-9b1e-9036a5e5eae2">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="21" height="50" uuid="79453c9d-24e3-4c73-b0ea-70c623a83da5"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[10-14 Years]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="21" height="20" uuid="20195a7c-0f2d-498b-b3fc-e4a4ba8d6021"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,10-14 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="96b4d889-eeab-402e-b5b8-d7af3cec8688">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column8"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="20" height="50" uuid="4a07e252-fc25-48fa-a6ec-13e3e78085af"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[15-19 Years]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="20" height="20" uuid="1402dc84-4643-44b0-9ac9-39621eb2feab"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,15-19 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="e9e7e77c-9e48-476d-bd83-f0abdc7d5aca">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column9"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="20" height="50" uuid="d8dc1084-8187-4e30-9f86-ab34efededbf"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[20-24 Years]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="20" height="20" uuid="95ca0fce-7961-48e5-9f1b-fa66df7fd168"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,20-24 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="ff73f970-d86a-40af-a096-b034f8bd54f4">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column10"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="20" height="50" uuid="863a5659-618f-40ca-9b36-0ac147b7076d"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[25-49 Years]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="20" height="20" uuid="7bf588df-2835-462e-938a-190355241a85"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,25-49 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="378146e7-b34c-40b0-8dad-03bf4ea794db">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column11"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="20" height="50" uuid="4505b840-7a1f-46ae-bb7a-e4c1b3898b26"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[<=50 Years]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="20" height="20" uuid="8b79e304-80d8-4a11-b3d2-f33cdb9f8a02"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,>=50 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="6c4f2e47-1645-4408-ba48-28ecb15dfb0b">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column12"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="20" height="50" uuid="4e7c429b-795e-489a-b2af-1b5fa2b1bc76"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="20" height="20" uuid="4dbe6049-bf3e-4fc1-b8be-a9dba5414cb5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,Total}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="8b774f19-da29-43b9-8e03-e7769ada8fc7">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column13"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="20" height="50" uuid="80c3d186-1e3e-46a9-a346-4133d2f33b14"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[<1 Year]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="dd4b215a-acf7-40a1-a9e9-c228bfe604e3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,<1 year}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="9aa79d6c-92ea-4900-bd15-a23ba9429cd1">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column14"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="20" height="50" uuid="b91bd128-8e4b-41af-a6a7-1f7678e37ad3"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[1-4 Years]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="25882b9d-9ead-40f4-9c5f-d2414a5d0b5b"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,1-4 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="c0dd1fdb-4200-4ee9-a4a3-71b6237adf65">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column15"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="20" height="50" uuid="ad62286b-85cc-4ada-8797-ddb9c33ec247"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[5-9 Years]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="40ff743c-cecc-40f9-a723-68ef5fa165aa"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,5-9 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="8b48ce56-6040-4733-8be3-13e6a45e42ee">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column16"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="20" height="50" uuid="ac8e2571-94fd-42af-b44c-fe2994ba34b4"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[10-14 Years]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="2bddcc51-bfaf-4aac-bce4-e5be8c258fc2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,10-14 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="bb598c09-fe9d-4acd-b192-9b90f49da02d">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column17"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="20" height="50" uuid="74e4d7f6-4ac6-4dde-90f1-e92d44389e98"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[15-19 Years]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="f8e6322f-065f-4e53-a09c-8628c24ed7e5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,15-19 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="396414f4-fd74-40db-a855-55db860b728c">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column18"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="20" height="50" uuid="f97d6127-ec0c-40c5-b1da-bdfe1c26b668"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[20-24 Years]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="96d303c8-ac60-4a16-a7be-cb7d461dc466"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,20-24 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="0587668a-9fe1-4d70-9a54-1f945deb4084">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column19"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="20" height="50" uuid="8d19e3fb-14f1-4e81-8aa6-82a682af2e33"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[25-49 Years]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="8e0222ec-f8f2-46c8-b2e9-9529d1e0650e"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,25-49 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="11daa742-0256-429f-98f3-19923b3bb8c7">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column20"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="20" height="50" uuid="2d4a739d-e6b5-40e8-bfe0-aa665e212bf7"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[<=50 Years]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="de5f6db9-1cf6-492a-b18f-e70535f313cc"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,>=50 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="19" uuid="e53b571f-6489-4afa-b86f-161629b2fc42">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column21"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="19" height="50" uuid="29abd581-2ffd-4246-97f8-c501cc1c6bd2"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Pregnant]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="19" height="20" uuid="f26c78e4-899f-457b-863c-fd50dc14bfc7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Pregnant}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="19" uuid="3388af91-477d-4737-8944-8610e7a38c01">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column22"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:columnHeader style="Table_CH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="19" height="50" uuid="ecc4ba0c-200a-469e-b8a9-d178c18f4c04"/>
+								<textElement textAlignment="Left" rotation="Left">
+									<font fontName="Arial" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Breast Feeding]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="19" height="20" uuid="6604c0f5-1bf7-4362-b624-a659f922a64f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{BreastFeeding}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement positionType="Float" x="0" y="115" width="556" height="20" uuid="f4fe38f0-31be-41bd-bfb7-e22fd70d0eca">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 2_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 2_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 2_TD"/>
+					<property name="net.sf.jasperreports.export.headertoolbar.table.name" value=""/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="AllSectionsNoDetail">
+					<datasetRun subDataset="Dataset2" uuid="89cb293c-48f1-4be2-a92d-ebbd4cbba560">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="120" uuid="39fdb47f-12e8-45cd-b7e9-5b270976181e">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField isStretchWithOverflow="true">
+								<reportElement x="0" y="0" width="120" height="20" uuid="1e985edb-8439-43f5-a87b-ecfbf4512263">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<textElement textAlignment="Justified">
+									<font fontName="Arial" size="6"/>
+									<paragraph lineSpacing="Single" lineSpacingSize="1.0" firstLineIndent="3" leftIndent="3" rightIndent="1" spacingBefore="0"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{indicator}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="31" uuid="a34c0bec-4a8f-4ee6-a0b9-1b7b7e48594e">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="31" height="20" uuid="892fea16-71d8-404a-9c11-bdefcef67ebd">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Total}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="21" uuid="6e548200-4d7d-4ccf-9f2e-654314ab7500">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="21" height="20" uuid="0c040c7b-4436-4ac8-b8e8-a32899811da7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,Total}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="21" uuid="dad83c94-bd2d-49a4-b649-130b0cdd4966">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="21" height="20" uuid="6ce0de39-d116-4e22-bbf7-08e7b38fd8de"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,<1 year}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="21" uuid="1c286ff2-049b-443d-bdca-ac25a8b249c8">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="21" height="20" uuid="0f841845-5f3f-4eea-84ea-c05e1fc5147d">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,1-4 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="21" uuid="ef9196d2-7b21-4a74-beeb-43bbf99afd8a">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="21" height="20" uuid="52bf022d-f044-49b5-ba18-cda11b02f0c7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,5-9 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="21" uuid="33441292-f161-4932-9b1e-9036a5e5eae2">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="21" height="20" uuid="20195a7c-0f2d-498b-b3fc-e4a4ba8d6021"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,10-14 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="96b4d889-eeab-402e-b5b8-d7af3cec8688">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column8"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="20" height="20" uuid="1402dc84-4643-44b0-9ac9-39621eb2feab"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,15-19 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="e9e7e77c-9e48-476d-bd83-f0abdc7d5aca">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column9"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="20" height="20" uuid="95ca0fce-7961-48e5-9f1b-fa66df7fd168"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,20-24 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="ff73f970-d86a-40af-a096-b034f8bd54f4">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column10"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="20" height="20" uuid="7bf588df-2835-462e-938a-190355241a85"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,25-49 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="378146e7-b34c-40b0-8dad-03bf4ea794db">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column11"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="20" height="20" uuid="8b79e304-80d8-4a11-b3d2-f33cdb9f8a02"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,>=50 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="6c4f2e47-1645-4408-ba48-28ecb15dfb0b">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column12"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="20" height="20" uuid="4dbe6049-bf3e-4fc1-b8be-a9dba5414cb5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,Total}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="8b774f19-da29-43b9-8e03-e7769ada8fc7">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column13"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="dd4b215a-acf7-40a1-a9e9-c228bfe604e3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,<1 year}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="9aa79d6c-92ea-4900-bd15-a23ba9429cd1">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column14"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="25882b9d-9ead-40f4-9c5f-d2414a5d0b5b"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,1-4 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="c0dd1fdb-4200-4ee9-a4a3-71b6237adf65">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column15"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="40ff743c-cecc-40f9-a723-68ef5fa165aa"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,5-9 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="8b48ce56-6040-4733-8be3-13e6a45e42ee">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column16"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="2bddcc51-bfaf-4aac-bce4-e5be8c258fc2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,10-14 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="bb598c09-fe9d-4acd-b192-9b90f49da02d">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column17"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="f8e6322f-065f-4e53-a09c-8628c24ed7e5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,15-19 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="396414f4-fd74-40db-a855-55db860b728c">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column18"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="96d303c8-ac60-4a16-a7be-cb7d461dc466"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,20-24 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="0587668a-9fe1-4d70-9a54-1f945deb4084">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column19"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="8e0222ec-f8f2-46c8-b2e9-9529d1e0650e"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,25-49 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="11daa742-0256-429f-98f3-19923b3bb8c7">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column20"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="de5f6db9-1cf6-492a-b18f-e70535f313cc"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,>=50 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="19" uuid="e53b571f-6489-4afa-b86f-161629b2fc42">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column21"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="19" height="20" uuid="f26c78e4-899f-457b-863c-fd50dc14bfc7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Pregnant}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="19" uuid="3388af91-477d-4737-8944-8610e7a38c01">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column22"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="19" height="20" uuid="6604c0f5-1bf7-4362-b624-a659f922a64f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{BreastFeeding}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="0" y="7" width="120" height="23" isPrintInFirstWholeBand="true" uuid="edf3c907-6b94-415d-b8c3-aa789520473b">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<printWhenExpression><![CDATA[($V{REPORT_COUNT})<2]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="120" y="7" width="216" height="23" isPrintInFirstWholeBand="true" uuid="948debec-cf9a-4e7c-b5ca-16d12c08d52b">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<printWhenExpression><![CDATA[($V{REPORT_COUNT})<2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[MALES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="337" y="7" width="217" height="23" isPrintInFirstWholeBand="true" uuid="254be8d2-7699-4002-99b7-45342d45bc0c">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<printWhenExpression><![CDATA[($V{REPORT_COUNT})<2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[FEMALES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="0" y="101" width="555" height="13" isPrintInFirstWholeBand="true" backcolor="#E3E1E1" uuid="10b858db-75d5-4336-b397-39061fd52e0a">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<printWhenExpression><![CDATA[($V{REPORT_COUNT})<2]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="5">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ART (Subset of HIV care)]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement positionType="Float" x="1" y="148" width="556" height="20" uuid="26edc853-39de-4a14-bec9-de843f368f6a">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 2_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 2_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 2_TD"/>
+					<property name="net.sf.jasperreports.export.headertoolbar.table.name" value=""/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="AllSectionsNoDetail">
+					<datasetRun subDataset="Dataset3" uuid="89cb293c-48f1-4be2-a92d-ebbd4cbba560">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="120" uuid="39fdb47f-12e8-45cd-b7e9-5b270976181e">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField isStretchWithOverflow="true">
+								<reportElement x="0" y="0" width="120" height="20" uuid="1e985edb-8439-43f5-a87b-ecfbf4512263">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<textElement>
+									<font fontName="Arial" size="6"/>
+									<paragraph lineSpacing="Single" lineSpacingSize="1.0" firstLineIndent="3" leftIndent="3" rightIndent="1" spacingBefore="0"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{indicator}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="31" uuid="a34c0bec-4a8f-4ee6-a0b9-1b7b7e48594e">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="31" height="20" uuid="892fea16-71d8-404a-9c11-bdefcef67ebd">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Total}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="21" uuid="6e548200-4d7d-4ccf-9f2e-654314ab7500">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="21" height="20" uuid="0c040c7b-4436-4ac8-b8e8-a32899811da7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,Total}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="21" uuid="dad83c94-bd2d-49a4-b649-130b0cdd4966">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="21" height="20" uuid="6ce0de39-d116-4e22-bbf7-08e7b38fd8de"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,<1 year}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="21" uuid="1c286ff2-049b-443d-bdca-ac25a8b249c8">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="21" height="20" uuid="0f841845-5f3f-4eea-84ea-c05e1fc5147d">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,1-4 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="21" uuid="ef9196d2-7b21-4a74-beeb-43bbf99afd8a">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="21" height="20" uuid="52bf022d-f044-49b5-ba18-cda11b02f0c7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,5-9 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="21" uuid="33441292-f161-4932-9b1e-9036a5e5eae2">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="21" height="20" uuid="20195a7c-0f2d-498b-b3fc-e4a4ba8d6021"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,10-14 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="96b4d889-eeab-402e-b5b8-d7af3cec8688">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column8"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="20" height="20" uuid="1402dc84-4643-44b0-9ac9-39621eb2feab"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,15-19 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="e9e7e77c-9e48-476d-bd83-f0abdc7d5aca">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column9"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="20" height="20" uuid="95ca0fce-7961-48e5-9f1b-fa66df7fd168"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,20-24 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="ff73f970-d86a-40af-a096-b034f8bd54f4">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column10"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="20" height="20" uuid="7bf588df-2835-462e-938a-190355241a85"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,25-49 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="378146e7-b34c-40b0-8dad-03bf4ea794db">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column11"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="20" height="20" uuid="8b79e304-80d8-4a11-b3d2-f33cdb9f8a02"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{M,>=50 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="6c4f2e47-1645-4408-ba48-28ecb15dfb0b">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column12"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField pattern="#,##0.###;#,##0.###-">
+								<reportElement x="0" y="0" width="20" height="20" uuid="4dbe6049-bf3e-4fc1-b8be-a9dba5414cb5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="8"/>
+									<paragraph rightIndent="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,Total}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="8b774f19-da29-43b9-8e03-e7769ada8fc7">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column13"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="dd4b215a-acf7-40a1-a9e9-c228bfe604e3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,<1 year}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="9aa79d6c-92ea-4900-bd15-a23ba9429cd1">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column14"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="25882b9d-9ead-40f4-9c5f-d2414a5d0b5b"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,1-4 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="c0dd1fdb-4200-4ee9-a4a3-71b6237adf65">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column15"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="40ff743c-cecc-40f9-a723-68ef5fa165aa"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,5-9 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="8b48ce56-6040-4733-8be3-13e6a45e42ee">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column16"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="2bddcc51-bfaf-4aac-bce4-e5be8c258fc2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,10-14 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="bb598c09-fe9d-4acd-b192-9b90f49da02d">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column17"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="f8e6322f-065f-4e53-a09c-8628c24ed7e5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,15-19 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="396414f4-fd74-40db-a855-55db860b728c">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column18"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="96d303c8-ac60-4a16-a7be-cb7d461dc466"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,20-24 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="0587668a-9fe1-4d70-9a54-1f945deb4084">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column19"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="8e0222ec-f8f2-46c8-b2e9-9529d1e0650e"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,25-49 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="20" uuid="11daa742-0256-429f-98f3-19923b3bb8c7">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column20"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="20" height="20" uuid="de5f6db9-1cf6-492a-b18f-e70535f313cc"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{F,>=50 years}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="19" uuid="e53b571f-6489-4afa-b86f-161629b2fc42">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column21"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="19" height="20" uuid="f26c78e4-899f-457b-863c-fd50dc14bfc7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Pregnant}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="19" uuid="3388af91-477d-4737-8944-8610e7a38c01">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column22"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="19" height="20" uuid="6604c0f5-1bf7-4362-b624-a659f922a64f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{BreastFeeding}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="2" y="135" width="555" height="13" isPrintInFirstWholeBand="true" backcolor="#E3E1E1" uuid="2806c919-eaab-4585-bc52-e7133c5d4f4b">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<printWhenExpression><![CDATA[($V{REPORT_COUNT})<2]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="5">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TABLE 3:ART FOLLOWUP]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<summary>
+		<band height="126">
+			<staticText>
+				<reportElement x="259" y="21" width="77" height="10" uuid="dbdc29a9-ab20-41c3-af51-69954ad0461a"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Facility:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="259" y="41" width="77" height="12" uuid="904f8b20-ac3e-43ba-905a-9a949034c5e9"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[District:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="259" y="42" width="77" height="30" uuid="96254b2d-e14c-437a-bbbc-171e9c12306d"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Region:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="313" y="1" width="65" height="15" uuid="83de72ce-830e-4dd6-89ae-f0502d101a0e"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Date received]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="388" y="1" width="78" height="17" uuid="67b7fd86-a65e-428f-8552-88615786620f"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Date submitted to next level]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="7" width="170" height="30" uuid="a6e854c9-0350-4923-80b8-517674a4ddc4"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Name of person reviewing the report:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="473" y="0" width="78" height="18" uuid="b9e193ca-de8a-48af-aa2f-b68eb362f440"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Name of person receiving report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="22" width="48" height="30" uuid="cc809480-6539-4ded-a247-3d0954796482"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="261" y="65" width="77" height="30" uuid="8f6f3b98-5f8e-4977-961c-f72a99b6d50a"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[NACP:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="24" width="180" height="30" uuid="be692d5d-02d3-4d57-88aa-2ba051a2abf4"/>
+				<text><![CDATA[______________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="61" width="180" height="30" uuid="1bf93c67-bf61-4b33-b065-d69e67c743a4"/>
+				<text><![CDATA[_______________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="298" y="21" width="85" height="21" uuid="492971d9-5d57-4525-a81b-d812fa3803a1"/>
+				<text><![CDATA[_______________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="298" y="41" width="85" height="23" uuid="5ae35b36-cb39-42d8-8097-e5875e684bc0"/>
+				<text><![CDATA[_______________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="296" y="59" width="85" height="30" uuid="1c373d1b-00bb-416b-84d2-11c38f2d6aab"/>
+				<text><![CDATA[_______________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="297" y="82" width="85" height="30" uuid="4df56651-c537-4e7a-b82b-b3e4f3ec35fe"/>
+				<text><![CDATA[_______________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="388" y="21" width="85" height="21" uuid="e27f272e-6e7d-43e5-8fdb-50f8eeba2b3f"/>
+				<text><![CDATA[_______________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="388" y="41" width="85" height="23" uuid="7a60f8f3-0466-4bf1-b543-830edc52fdfa"/>
+				<text><![CDATA[_______________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="386" y="59" width="85" height="30" uuid="fe5012ba-b74d-4f73-8fd1-0ce7c9917cbd"/>
+				<text><![CDATA[_______________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="387" y="82" width="85" height="30" uuid="7c75afdb-d5ee-4489-a68b-85e369afd94a"/>
+				<text><![CDATA[_______________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="476" y="21" width="85" height="21" uuid="83a64030-d876-4e00-bbd3-e14336814019"/>
+				<text><![CDATA[_______________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="476" y="41" width="85" height="23" uuid="f163030d-009b-4336-8b63-27e5a6a2138a"/>
+				<text><![CDATA[_______________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="474" y="57" width="85" height="30" uuid="1481d42c-d737-4288-9b61-bc36bf321e24"/>
+				<text><![CDATA[_______________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="475" y="80" width="85" height="30" uuid="c5e629a3-0d16-406f-83ab-77979a3bc7d2"/>
+				<text><![CDATA[_______________]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: org.bahmni.reports.scheduler.ReportsSchedulerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.425 sec <<< FAILURE! - in org.bahmni.reports.scheduler.ReportsSchedulerTest
+shouldDeleteTheFileOfCompletedJob(org.bahmni.reports.scheduler.ReportsSchedulerTest)  Time elapsed: 0.033 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.bahmni.reports.scheduler.ReportsScheduler.deleteFileOfReport(ReportsScheduler.java:133)
+	at org.bahmni.reports.scheduler.ReportsScheduler.deleteScheduledReport(ReportsScheduler.java:123)
+	at org.bahmni.reports.scheduler.ReportsSchedulerTest.shouldDeleteTheFileOfCompletedJob(ReportsSchedulerTest.java:132)
+
